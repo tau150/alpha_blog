@@ -4,7 +4,6 @@ class ArticlesController < ApplicationController
 def index
   @articles = Article.all
   
-
 end
 
 
@@ -40,6 +39,13 @@ def update
   else
     render "edit"
   end
+end
+
+def destroy
+  @article = Article.find(params[:id])
+  @article.destroy
+  flash[:notice] = "Article was successfully delted"
+  redirect_to articles_path
 end
 
 
