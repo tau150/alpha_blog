@@ -4,5 +4,8 @@ resources :articles
 
 root 'pages#home'
 
+get 'signup', to: 'users#new'
+resources :users, except: [:new]
+
 get 'about', to: 'pages#about'
 end
