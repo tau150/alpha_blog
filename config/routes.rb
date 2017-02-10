@@ -9,3 +9,4 @@ resources :users, except: [:new]
 
 get 'about', to: 'pages#about'
 end
+
