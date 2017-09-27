@@ -1,18 +1,17 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-resources :articles
+  resources :articles
+  resources :categories, except: [:destroy]
 
-root 'pages#home'
+  root 'pages#home'
 
-get 'signup', to: 'users#new'
-resources :users, except: [:new]
+  get 'signup', to: 'users#new'
+  resources :users, except: [:new]
 
-get 'login', to: 'sessions#new'
-post 'login', to: 'sessions#create'
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
 
-delete 'logout', to: 'sessions#destroy'
+  delete 'logout', to: 'sessions#destroy'
 
-
-get 'about', to: 'pages#about'
+  get 'about', to: 'pages#about'
 end
-
