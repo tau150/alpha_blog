@@ -1,24 +1,10 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple app made just to learn and practice with ruby on rails.
 
-Things you may want to cover:
+If you want to test the application visit:
 
-* Ruby version
+https://alpha-blog-tau150.herokuapp.com
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+user: admin@gmail.com
+password: secret
